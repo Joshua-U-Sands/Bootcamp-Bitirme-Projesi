@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		E399524428E461D700544AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E399524328E461D700544AB6 /* AppDelegate.swift */; };
 		E399524628E461D700544AB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E399524528E461D700544AB6 /* SceneDelegate.swift */; };
-		E399524828E461D700544AB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E399524728E461D700544AB6 /* ViewController.swift */; };
+		E399524828E461D700544AB6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E399524728E461D700544AB6 /* HomeVC.swift */; };
 		E399524B28E461D700544AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E399524928E461D700544AB6 /* Main.storyboard */; };
 		E399524E28E461D700544AB6 /* Bootcamp_Bitirme_Projesi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E399524C28E461D700544AB6 /* Bootcamp_Bitirme_Projesi.xcdatamodeld */; };
 		E399525028E461D900544AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E399524F28E461D900544AB6 /* Assets.xcassets */; };
 		E399525328E461D900544AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E399525128E461D900544AB6 /* LaunchScreen.storyboard */; };
+		E399525B28E4624300544AB6 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E399525A28E4624300544AB6 /* SearchVC.swift */; };
+		E399525D28E4650C00544AB6 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E399525C28E4650C00544AB6 /* SourceSansPro-Bold.ttf */; };
+		E399526028E466C400544AB6 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E399525F28E466C400544AB6 /* SourceSansPro-ExtraLight.ttf */; };
+		E3B3806628E48BF600E644F8 /* BookmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B3806528E48BF600E644F8 /* BookmarkVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E399524028E461D700544AB6 /* Bootcamp Bitirme Projesi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bootcamp Bitirme Projesi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E399524328E461D700544AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E399524528E461D700544AB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E399524728E461D700544AB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E399524728E461D700544AB6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		E399524A28E461D700544AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E399524D28E461D700544AB6 /* Bootcamp_Bitirme_Projesi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bootcamp_Bitirme_Projesi.xcdatamodel; sourceTree = "<group>"; };
 		E399524F28E461D900544AB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E399525228E461D900544AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E399525428E461D900544AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E399525A28E4624300544AB6 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		E399525C28E4650C00544AB6 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
+		E399525F28E466C400544AB6 /* SourceSansPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E3B3806528E48BF600E644F8 /* BookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +68,26 @@
 			children = (
 				E399524328E461D700544AB6 /* AppDelegate.swift */,
 				E399524528E461D700544AB6 /* SceneDelegate.swift */,
-				E399524728E461D700544AB6 /* ViewController.swift */,
+				E399524728E461D700544AB6 /* HomeVC.swift */,
+				E399525A28E4624300544AB6 /* SearchVC.swift */,
+				E3B3806528E48BF600E644F8 /* BookmarkVC.swift */,
 				E399524928E461D700544AB6 /* Main.storyboard */,
 				E399524F28E461D900544AB6 /* Assets.xcassets */,
 				E399525128E461D900544AB6 /* LaunchScreen.storyboard */,
 				E399525428E461D900544AB6 /* Info.plist */,
 				E399524C28E461D700544AB6 /* Bootcamp_Bitirme_Projesi.xcdatamodeld */,
+				E399525E28E4652B00544AB6 /* fonts */,
 			);
 			path = "Bootcamp Bitirme Projesi";
+			sourceTree = "<group>";
+		};
+		E399525E28E4652B00544AB6 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E399525C28E4650C00544AB6 /* SourceSansPro-Bold.ttf */,
+				E399525F28E466C400544AB6 /* SourceSansPro-ExtraLight.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +148,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E399526028E466C400544AB6 /* SourceSansPro-ExtraLight.ttf in Resources */,
 				E399525328E461D900544AB6 /* LaunchScreen.storyboard in Resources */,
 				E399525028E461D900544AB6 /* Assets.xcassets in Resources */,
 				E399524B28E461D700544AB6 /* Main.storyboard in Resources */,
+				E399525D28E4650C00544AB6 /* SourceSansPro-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E399524E28E461D700544AB6 /* Bootcamp_Bitirme_Projesi.xcdatamodeld in Sources */,
-				E399524828E461D700544AB6 /* ViewController.swift in Sources */,
+				E399525B28E4624300544AB6 /* SearchVC.swift in Sources */,
+				E3B3806628E48BF600E644F8 /* BookmarkVC.swift in Sources */,
+				E399524828E461D700544AB6 /* HomeVC.swift in Sources */,
 				E399524428E461D700544AB6 /* AppDelegate.swift in Sources */,
 				E399524628E461D700544AB6 /* SceneDelegate.swift in Sources */,
 			);
@@ -299,6 +323,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +352,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
