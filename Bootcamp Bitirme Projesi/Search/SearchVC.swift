@@ -26,7 +26,9 @@ class SearchVC: UIViewController {
         
         searchResultTable.delegate = self
         searchResultTable.dataSource = self
-//        self.view.backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
+        searchResultTable.separatorStyle = .none
+
+        self.view.backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
         
         searchBarView.frame = CGRect(x: 0, y: 0, width: 358, height: 48)
         searchBarView.backgroundColor = .white
@@ -68,12 +70,16 @@ class SearchVC: UIViewController {
         hotelsButton.setImage(UIImage(named: "HotelsSelected"), for: .normal)
         flightsButton.setImage(UIImage(named: "FlightsUnselected"), for: .normal)
         searchField.text = ""
+        searchField.placeholder = "Where to next?"
+        searchField.endEditing(true)
     }
     
     @IBAction func flightsSelected(_ sender: UIButton) {
         hotelsButton.setImage(UIImage(named: "HotelsUnselected"), for: .normal)
         flightsButton.setImage(UIImage(named: "FlightsSelected"), for: .normal)
         searchField.text = ""
+        searchField.placeholder = "View flight number"
+        searchField.endEditing(true)
     }
 }
 

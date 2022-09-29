@@ -49,6 +49,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E32DDBD628E5CEE40043DB9C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E399524728E461D700544AB6 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E32DDBD828E5CEFA0043DB9C /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				E3B3806528E48BF600E644F8 /* BookmarkVC.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		E32DDBD928E5CF150043DB9C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E32DDBD028E5C1E30043DB9C /* SearchResultCell.swift */,
+				E399525A28E4624300544AB6 /* SearchVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		E399523728E461D700544AB6 = {
 			isa = PBXGroup;
 			children = (
@@ -68,12 +93,11 @@
 		E399524228E461D700544AB6 /* Bootcamp Bitirme Projesi */ = {
 			isa = PBXGroup;
 			children = (
+				E32DDBD628E5CEE40043DB9C /* Home */,
+				E32DDBD928E5CF150043DB9C /* Search */,
+				E32DDBD828E5CEFA0043DB9C /* Bookmark */,
 				E399524328E461D700544AB6 /* AppDelegate.swift */,
 				E399524528E461D700544AB6 /* SceneDelegate.swift */,
-				E399524728E461D700544AB6 /* HomeVC.swift */,
-				E399525A28E4624300544AB6 /* SearchVC.swift */,
-				E3B3806528E48BF600E644F8 /* BookmarkVC.swift */,
-				E32DDBD028E5C1E30043DB9C /* SearchResultCell.swift */,
 				E399524928E461D700544AB6 /* Main.storyboard */,
 				E399524F28E461D900544AB6 /* Assets.xcassets */,
 				E399525128E461D900544AB6 /* LaunchScreen.storyboard */,
