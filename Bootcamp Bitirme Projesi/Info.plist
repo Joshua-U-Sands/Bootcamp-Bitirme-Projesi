@@ -6,8 +6,8 @@
 	<string></string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SourceSansPro-ExtraLight.ttf</string>
-		<string>SourceSansPro-Bold</string>
+		<string>SourceSansPro-Regular.ttf</string>
+		<string>SourceSansPro-Bold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

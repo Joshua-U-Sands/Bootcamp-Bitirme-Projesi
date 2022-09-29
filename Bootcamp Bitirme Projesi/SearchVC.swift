@@ -9,6 +9,10 @@ import UIKit
 
 class SearchVC: UIViewController {
 
+    @IBOutlet weak var searchLabel: UILabel!
+    @IBOutlet weak var searchResultTable: UITableView!
+    @IBOutlet weak var hotelsButton: UIButton!
+    @IBOutlet weak var flightsButton: UIButton!
     @IBOutlet weak var searchBarView: UIView!
     @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var magnifyImage: UIImageView!
@@ -18,6 +22,10 @@ class SearchVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchLabel.font = UIFont(name: "SourceSansPro-Bold", size: 30)
+        
+        searchResultTable.delegate = self
+        searchResultTable.dataSource = self
 //        self.view.backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
         
         searchBarView.frame = CGRect(x: 0, y: 0, width: 358, height: 48)
@@ -41,6 +49,7 @@ class SearchVC: UIViewController {
         view.endEditing(true)
     }
     
+    //NAVIGATION BUTTONS
     @IBAction func homePressed(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "homeVC") as! HomeVC
         vc.modalPresentationStyle = .fullScreen
@@ -52,7 +61,52 @@ class SearchVC: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         present(vc,animated: false)
     }
+    
+    //SELECTION BUTTONS
+    @IBAction func hotelsSelected(_ sender: UIButton) {
+        
+        hotelsButton.setImage(UIImage(named: "HotelsSelected"), for: .normal)
+        flightsButton.setImage(UIImage(named: "FlightsUnselected"), for: .normal)
+        searchField.text = ""
+    }
+    
+    @IBAction func flightsSelected(_ sender: UIButton) {
+        hotelsButton.setImage(UIImage(named: "HotelsUnselected"), for: .normal)
+        flightsButton.setImage(UIImage(named: "FlightsSelected"), for: .normal)
+        searchField.text = ""
+    }
 }
+
+extension SearchVC: UITableViewDelegate{
+    
+}
+
+extension SearchVC: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = searchResultTable.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! SearchResultCell
+        
+        cell.searchResultImage.image = UIImage(named: "testCity")
+        cell.searchResultCity.textColor = UIColor(red: 0.988, green: 0.989, blue: 0.992, alpha: 1)
+        cell.searchResultCity.font = UIFont(name: "SourceSansPro-Regular", size: 18)
+        cell.searchResultCity.text = "Singapure"
+        
+        cell.searchResultName.textColor = UIColor(red: 0.988, green: 0.989, blue: 0.992, alpha: 1)
+        cell.searchResultName.font = UIFont(name: "SourceSansPro-Bold", size: 25)
+        cell.searchResultName.text = "Marina Bay"
+        
+        
+        
+        
+        return cell
+    }
+    
+    
+}
+
 
 
     
