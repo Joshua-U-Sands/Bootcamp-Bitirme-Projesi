@@ -22,6 +22,8 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        downloadHotels()
+        
         topPickCollection.isUserInteractionEnabled = true
         
         self.view.backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)

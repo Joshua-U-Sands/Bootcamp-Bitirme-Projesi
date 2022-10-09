@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CA2F81A12711CD2B17DEC21 /* Pods_Bootcamp_Bitirme_Projesi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC52DEF917EF6923B66727E7 /* Pods_Bootcamp_Bitirme_Projesi.framework */; };
 		E32DDBD128E5C1E30043DB9C /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32DDBD028E5C1E30043DB9C /* SearchResultCell.swift */; };
 		E32DDBD328E5C5650043DB9C /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E32DDBD228E5C5650043DB9C /* SourceSansPro-Regular.ttf */; };
 		E32DDBD528E5C5770043DB9C /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E32DDBD428E5C5770043DB9C /* SourceSansPro-Bold.ttf */; };
@@ -19,10 +20,14 @@
 		E399525028E461D900544AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E399524F28E461D900544AB6 /* Assets.xcassets */; };
 		E399525328E461D900544AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E399525128E461D900544AB6 /* LaunchScreen.storyboard */; };
 		E399525B28E4624300544AB6 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E399525A28E4624300544AB6 /* SearchVC.swift */; };
+		E3A39E0528F2EEF900590C21 /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A39E0428F2EEF900590C21 /* BookmarkCell.swift */; };
 		E3B3806628E48BF600E644F8 /* BookmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B3806528E48BF600E644F8 /* BookmarkVC.swift */; };
+		E3C8AE4228F164AE00B18BAC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8AE4128F164AE00B18BAC /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A92B9A2AE829D1FEFA25BE73 /* Pods-Bootcamp Bitirme Projesi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bootcamp Bitirme Projesi.release.xcconfig"; path = "Target Support Files/Pods-Bootcamp Bitirme Projesi/Pods-Bootcamp Bitirme Projesi.release.xcconfig"; sourceTree = "<group>"; };
+		BC52DEF917EF6923B66727E7 /* Pods_Bootcamp_Bitirme_Projesi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bootcamp_Bitirme_Projesi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32DDBD028E5C1E30043DB9C /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		E32DDBD228E5C5650043DB9C /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
 		E32DDBD428E5C5770043DB9C /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
@@ -37,7 +42,10 @@
 		E399525228E461D900544AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E399525428E461D900544AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E399525A28E4624300544AB6 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		E3A39E0428F2EEF900590C21 /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
 		E3B3806528E48BF600E644F8 /* BookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVC.swift; sourceTree = "<group>"; };
+		E3C8AE4128F164AE00B18BAC /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FC57B8EA513EF758D4F6D3CA /* Pods-Bootcamp Bitirme Projesi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bootcamp Bitirme Projesi.debug.xcconfig"; path = "Target Support Files/Pods-Bootcamp Bitirme Projesi/Pods-Bootcamp Bitirme Projesi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +53,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA2F81A12711CD2B17DEC21 /* Pods_Bootcamp_Bitirme_Projesi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AE1CAA326D2FD149453857B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC57B8EA513EF758D4F6D3CA /* Pods-Bootcamp Bitirme Projesi.debug.xcconfig */,
+				A92B9A2AE829D1FEFA25BE73 /* Pods-Bootcamp Bitirme Projesi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9CEEBB35746B1309E0CC915F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC52DEF917EF6923B66727E7 /* Pods_Bootcamp_Bitirme_Projesi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E32DDBD628E5CEE40043DB9C /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				E3B3806528E48BF600E644F8 /* BookmarkVC.swift */,
+				E3A39E0428F2EEF900590C21 /* BookmarkCell.swift */,
 			);
 			path = Bookmark;
 			sourceTree = "<group>";
@@ -82,6 +109,8 @@
 			children = (
 				E399524228E461D700544AB6 /* Bootcamp Bitirme Projesi */,
 				E399524128E461D700544AB6 /* Products */,
+				8AE1CAA326D2FD149453857B /* Pods */,
+				9CEEBB35746B1309E0CC915F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +130,7 @@
 				E32DDBD828E5CEFA0043DB9C /* Bookmark */,
 				E399524328E461D700544AB6 /* AppDelegate.swift */,
 				E399524528E461D700544AB6 /* SceneDelegate.swift */,
+				E3C8AE4128F164AE00B18BAC /* Network.swift */,
 				E399524928E461D700544AB6 /* Main.storyboard */,
 				E399524F28E461D900544AB6 /* Assets.xcassets */,
 				E399525128E461D900544AB6 /* LaunchScreen.storyboard */,
@@ -127,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E399525728E461D900544AB6 /* Build configuration list for PBXNativeTarget "Bootcamp Bitirme Projesi" */;
 			buildPhases = (
+				DB8B3CE1FF3425C2D49F9A08 /* [CP] Check Pods Manifest.lock */,
 				E399523C28E461D700544AB6 /* Sources */,
 				E399523D28E461D700544AB6 /* Frameworks */,
 				E399523E28E461D700544AB6 /* Resources */,
+				D77BF2C5CE7EC9B778E53E92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +220,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D77BF2C5CE7EC9B778E53E92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bootcamp Bitirme Projesi/Pods-Bootcamp Bitirme Projesi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bootcamp Bitirme Projesi/Pods-Bootcamp Bitirme Projesi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bootcamp Bitirme Projesi/Pods-Bootcamp Bitirme Projesi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB8B3CE1FF3425C2D49F9A08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bootcamp Bitirme Projesi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E399523C28E461D700544AB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -198,6 +272,8 @@
 				E399525B28E4624300544AB6 /* SearchVC.swift in Sources */,
 				E3B3806628E48BF600E644F8 /* BookmarkVC.swift in Sources */,
 				E399524828E461D700544AB6 /* HomeVC.swift in Sources */,
+				E3A39E0528F2EEF900590C21 /* BookmarkCell.swift in Sources */,
+				E3C8AE4228F164AE00B18BAC /* Network.swift in Sources */,
 				E399524428E461D700544AB6 /* AppDelegate.swift in Sources */,
 				E3826F8728F05F4200AA5E96 /* topPickCell.swift in Sources */,
 				E399524628E461D700544AB6 /* SceneDelegate.swift in Sources */,
@@ -342,6 +418,7 @@
 		};
 		E399525828E461D900544AB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC57B8EA513EF758D4F6D3CA /* Pods-Bootcamp Bitirme Projesi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -371,6 +448,7 @@
 		};
 		E399525928E461D900544AB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92B9A2AE829D1FEFA25BE73 /* Pods-Bootcamp Bitirme Projesi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
