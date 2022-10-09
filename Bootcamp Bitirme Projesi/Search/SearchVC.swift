@@ -104,9 +104,6 @@ extension SearchVC: UITableViewDataSource{
         cell.searchResultName.font = UIFont(name: "SourceSansPro-Bold", size: 25)
         cell.searchResultName.text = "Marina Bay"
         
-        
-        
-        
         return cell
     }
     
