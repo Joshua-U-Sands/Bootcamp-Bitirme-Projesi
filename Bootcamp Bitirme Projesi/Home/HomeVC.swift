@@ -9,6 +9,7 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    
     //Views
     @IBOutlet weak var tabBar: UIView!
     @IBOutlet weak var homeBarView: UIView!
@@ -22,7 +23,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        downloadHotels()
+        
         
         topPickCollection.isUserInteractionEnabled = true
         
@@ -53,6 +54,14 @@ class HomeVC: UIViewController {
         topPickCollection.layer.shadowRadius = 16
 
         topPickCollection.layer.shadowOffset = CGSize(width: 2, height: 8)
+        
+        
+        parseJSON()
+        
+        
+        
+        
+        
     }
     
 
@@ -81,6 +90,9 @@ class HomeVC: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         present(vc,animated: false)
     }
+    
+    //Functions
+    
     
 }
 

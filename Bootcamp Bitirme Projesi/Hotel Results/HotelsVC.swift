@@ -8,7 +8,9 @@
 import UIKit
 
 class HotelsVC: UIViewController {
-
+    
+    var currentIndex = 0
+   
     @IBOutlet weak var hotelsTable: UITableView!
     
     override func viewDidLoad() {
@@ -17,6 +19,13 @@ class HotelsVC: UIViewController {
         hotelsTable.delegate = self
         hotelsTable.dataSource = self
         hotelsTable.separatorStyle = .none
+        
+        
+        
+        
+            
+        
+        
     }
     
     @IBAction func returnPressed(_ sender: UIButton) {
@@ -39,10 +48,14 @@ extension HotelsVC: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
         let cell = hotelsTable.dequeueReusableCell(withIdentifier: "hotelResultCell", for: indexPath) as! HotelsCell
         
         cell.hotelsDescription.textColor = UIColor(red: 0.988, green: 0.989, blue: 0.992, alpha: 1)
         cell.hotelsDescription.font = UIFont(name: "SourceSansPro-Regular", size: 18)
+        
+        cell.hotelsName.text = globalDelegate.shared.parsedHotels?.hotels[currentIndex].name
+            
         
         
         cell.hotelsName.textColor = UIColor(red: 0.988, green: 0.989, blue: 0.992, alpha: 1)
