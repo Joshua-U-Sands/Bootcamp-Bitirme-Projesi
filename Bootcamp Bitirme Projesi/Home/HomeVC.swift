@@ -55,10 +55,9 @@ class HomeVC: UIViewController {
         topPickCollection.layer.shadowOffset = CGSize(width: 2, height: 8)
     }
     
-//    func customTabBar(){
-//        bookmarkBarView.layer.cornerRadius = bookmarkBarView.frame.height / 2
-//        bookmarkBarView.backgroundColor = UIColor.orange
-//    }
+
+// Button functions
+    
     @IBAction func searchButtonPressed(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "searchVC") as! SearchVC
         vc.modalPresentationStyle = .fullScreen
@@ -71,7 +70,21 @@ class HomeVC: UIViewController {
         present(vc,animated: false)
     }
     
+    @IBAction func flightsButtonPressed(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "flightResultVC") as! FlightsVC
+        vc.modalPresentationStyle = .fullScreen
+        present(vc,animated: false)
+    }
+    
+    @IBAction func hotelsPressed(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "hotelsVC") as! HotelsVC
+        vc.modalPresentationStyle = .fullScreen
+        present(vc,animated: false)
+    }
+    
 }
+
+//Extensions
 
 extension HomeVC: UICollectionViewDelegate{
     

@@ -21,6 +21,12 @@
 		E399525328E461D900544AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E399525128E461D900544AB6 /* LaunchScreen.storyboard */; };
 		E399525B28E4624300544AB6 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E399525A28E4624300544AB6 /* SearchVC.swift */; };
 		E3A39E0528F2EEF900590C21 /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A39E0428F2EEF900590C21 /* BookmarkCell.swift */; };
+		E3AC0D2828F40B7F002EB406 /* FlightsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D2728F40B7F002EB406 /* FlightsCell.swift */; };
+		E3AC0D2A28F40E3F002EB406 /* FlightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D2928F40E3F002EB406 /* FlightsVC.swift */; };
+		E3AC0D2D28F41378002EB406 /* HotelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D2C28F41378002EB406 /* HotelsVC.swift */; };
+		E3AC0D2F28F4138F002EB406 /* HotelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D2E28F4138F002EB406 /* HotelsCell.swift */; };
+		E3AC0D3428F416C1002EB406 /* HotelDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D3328F416C1002EB406 /* HotelDetailsVC.swift */; };
+		E3AC0D3628F416D8002EB406 /* FlightDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D3528F416D8002EB406 /* FlightDetailsVC.swift */; };
 		E3B3806628E48BF600E644F8 /* BookmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B3806528E48BF600E644F8 /* BookmarkVC.swift */; };
 		E3C8AE4228F164AE00B18BAC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8AE4128F164AE00B18BAC /* Network.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +49,12 @@
 		E399525428E461D900544AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E399525A28E4624300544AB6 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		E3A39E0428F2EEF900590C21 /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
+		E3AC0D2728F40B7F002EB406 /* FlightsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsCell.swift; sourceTree = "<group>"; };
+		E3AC0D2928F40E3F002EB406 /* FlightsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsVC.swift; sourceTree = "<group>"; };
+		E3AC0D2C28F41378002EB406 /* HotelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsVC.swift; sourceTree = "<group>"; };
+		E3AC0D2E28F4138F002EB406 /* HotelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsCell.swift; sourceTree = "<group>"; };
+		E3AC0D3328F416C1002EB406 /* HotelDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDetailsVC.swift; sourceTree = "<group>"; };
+		E3AC0D3528F416D8002EB406 /* FlightDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsVC.swift; sourceTree = "<group>"; };
 		E3B3806528E48BF600E644F8 /* BookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVC.swift; sourceTree = "<group>"; };
 		E3C8AE4128F164AE00B18BAC /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		FC57B8EA513EF758D4F6D3CA /* Pods-Bootcamp Bitirme Projesi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bootcamp Bitirme Projesi.debug.xcconfig"; path = "Target Support Files/Pods-Bootcamp Bitirme Projesi/Pods-Bootcamp Bitirme Projesi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +137,9 @@
 		E399524228E461D700544AB6 /* Bootcamp Bitirme Projesi */ = {
 			isa = PBXGroup;
 			children = (
+				E3AC0D3028F4168F002EB406 /* Details */,
+				E3AC0D2B28F41352002EB406 /* Hotel Results */,
+				E3AC0D2128F40B20002EB406 /* Flight Results */,
 				E32DDBD628E5CEE40043DB9C /* Home */,
 				E32DDBD928E5CF150043DB9C /* Search */,
 				E32DDBD828E5CEFA0043DB9C /* Bookmark */,
@@ -148,6 +163,33 @@
 				E32DDBD428E5C5770043DB9C /* SourceSansPro-Bold.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		E3AC0D2128F40B20002EB406 /* Flight Results */ = {
+			isa = PBXGroup;
+			children = (
+				E3AC0D2728F40B7F002EB406 /* FlightsCell.swift */,
+				E3AC0D2928F40E3F002EB406 /* FlightsVC.swift */,
+			);
+			path = "Flight Results";
+			sourceTree = "<group>";
+		};
+		E3AC0D2B28F41352002EB406 /* Hotel Results */ = {
+			isa = PBXGroup;
+			children = (
+				E3AC0D2C28F41378002EB406 /* HotelsVC.swift */,
+				E3AC0D2E28F4138F002EB406 /* HotelsCell.swift */,
+			);
+			path = "Hotel Results";
+			sourceTree = "<group>";
+		};
+		E3AC0D3028F4168F002EB406 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				E3AC0D3328F416C1002EB406 /* HotelDetailsVC.swift */,
+				E3AC0D3528F416D8002EB406 /* FlightDetailsVC.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,11 +313,17 @@
 				E399524E28E461D700544AB6 /* Bootcamp_Bitirme_Projesi.xcdatamodeld in Sources */,
 				E399525B28E4624300544AB6 /* SearchVC.swift in Sources */,
 				E3B3806628E48BF600E644F8 /* BookmarkVC.swift in Sources */,
+				E3AC0D2D28F41378002EB406 /* HotelsVC.swift in Sources */,
+				E3AC0D2A28F40E3F002EB406 /* FlightsVC.swift in Sources */,
 				E399524828E461D700544AB6 /* HomeVC.swift in Sources */,
 				E3A39E0528F2EEF900590C21 /* BookmarkCell.swift in Sources */,
 				E3C8AE4228F164AE00B18BAC /* Network.swift in Sources */,
+				E3AC0D3428F416C1002EB406 /* HotelDetailsVC.swift in Sources */,
 				E399524428E461D700544AB6 /* AppDelegate.swift in Sources */,
+				E3AC0D2828F40B7F002EB406 /* FlightsCell.swift in Sources */,
 				E3826F8728F05F4200AA5E96 /* topPickCell.swift in Sources */,
+				E3AC0D3628F416D8002EB406 /* FlightDetailsVC.swift in Sources */,
+				E3AC0D2F28F4138F002EB406 /* HotelsCell.swift in Sources */,
 				E399524628E461D700544AB6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

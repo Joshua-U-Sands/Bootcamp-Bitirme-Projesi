@@ -27,8 +27,6 @@ class SearchVC: UIViewController {
         searchResultTable.delegate = self
         searchResultTable.dataSource = self
         searchResultTable.separatorStyle = .none
-
-        self.view.backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
         
         searchBarView.frame = CGRect(x: 0, y: 0, width: 358, height: 48)
         searchBarView.backgroundColor = .white
