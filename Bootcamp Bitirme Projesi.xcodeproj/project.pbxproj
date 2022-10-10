@@ -55,6 +55,7 @@
 		E3AC0D2E28F4138F002EB406 /* HotelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsCell.swift; sourceTree = "<group>"; };
 		E3AC0D3328F416C1002EB406 /* HotelDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDetailsVC.swift; sourceTree = "<group>"; };
 		E3AC0D3528F416D8002EB406 /* FlightDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsVC.swift; sourceTree = "<group>"; };
+		E3AC0D3A28F4879E002EB406 /* Hotel_API.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hotel_API.json; sourceTree = "<group>"; };
 		E3B3806528E48BF600E644F8 /* BookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVC.swift; sourceTree = "<group>"; };
 		E3C8AE4128F164AE00B18BAC /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		FC57B8EA513EF758D4F6D3CA /* Pods-Bootcamp Bitirme Projesi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bootcamp Bitirme Projesi.debug.xcconfig"; path = "Target Support Files/Pods-Bootcamp Bitirme Projesi/Pods-Bootcamp Bitirme Projesi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +144,7 @@
 				E32DDBD628E5CEE40043DB9C /* Home */,
 				E32DDBD928E5CF150043DB9C /* Search */,
 				E32DDBD828E5CEFA0043DB9C /* Bookmark */,
+				E3AC0D3A28F4879E002EB406 /* Hotel_API.json */,
 				E399524328E461D700544AB6 /* AppDelegate.swift */,
 				E399524528E461D700544AB6 /* SceneDelegate.swift */,
 				E3C8AE4128F164AE00B18BAC /* Network.swift */,
