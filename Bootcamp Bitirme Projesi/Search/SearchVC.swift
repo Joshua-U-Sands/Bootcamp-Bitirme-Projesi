@@ -43,14 +43,11 @@ class SearchVC: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         view.addGestureRecognizer(tapGesture)
         
-    
-        
-        
-        
-        
+        searchResultTable.isHidden = true
         
         
     }
+    
     
     @objc func hideKeyboard(){
         view.endEditing(true)
@@ -85,6 +82,18 @@ class SearchVC: UIViewController {
         searchField.text = ""
         searchField.placeholder = "View flight number"
         searchField.endEditing(true)
+    }
+    
+    
+    @IBAction func searchFieldChanged(_ sender: UITextField) {
+        
+        
+        if searchField.text!.count >= 3{
+            searchResultTable.isHidden = false
+        }else{
+            searchResultTable.isHidden = true
+        }
+        searchResultTable.reloadData()
     }
 }
 

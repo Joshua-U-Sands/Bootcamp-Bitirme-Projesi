@@ -9,21 +9,37 @@ import UIKit
 
 class HotelDetailsVC: UIViewController {
 
+    var x = 0
+    
+    @IBOutlet weak var backButtonView: UIView!
+    @IBOutlet weak var detailsImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        backButtonView.layer.cornerRadius = backButtonView.frame.size.height / 2
+        backButtonView.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
+        
+        detailsImage.layer.cornerRadius = 8.0
+        detailsImage.clipsToBounds = true
+        detailsImage.contentMode = .scaleToFill
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+       
+        if x == 0{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "hotelsVC") as! HotelsVC
+            vc.modalPresentationStyle = .fullScreen
+            present(vc,animated: true)
+            
+            
+        }else{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "flightsVC") as! FlightsVC
+            vc.modalPresentationStyle = .fullScreen
+            present(vc,animated: true)
+            
+        }
     }
-    */
-
 }

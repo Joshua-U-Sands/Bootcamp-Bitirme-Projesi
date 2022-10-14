@@ -8,6 +8,7 @@
 	<array>
 		<string>SourceSansPro-Regular.ttf</string>
 		<string>SourceSansPro-Bold.ttf</string>
+		<string>SourceSansPro-SemiBold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
