@@ -26,7 +26,6 @@
 		E3AC0D2D28F41378002EB406 /* HotelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D2C28F41378002EB406 /* HotelsVC.swift */; };
 		E3AC0D2F28F4138F002EB406 /* HotelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D2E28F4138F002EB406 /* HotelsCell.swift */; };
 		E3AC0D3428F416C1002EB406 /* HotelDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D3328F416C1002EB406 /* HotelDetailsVC.swift */; };
-		E3AC0D3628F416D8002EB406 /* FlightDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D3528F416D8002EB406 /* FlightDetailsVC.swift */; };
 		E3AC0D3C28F49E66002EB406 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AC0D3B28F49E66002EB406 /* data.json */; };
 		E3AC0D3E28F6BB7A002EB406 /* flightData.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AC0D3D28F6BB7A002EB406 /* flightData.json */; };
 		E3AC0D4028F7FD13002EB406 /* cityData.json in Resources */ = {isa = PBXBuildFile; fileRef = E3AC0D3F28F7FD13002EB406 /* cityData.json */; };
@@ -58,7 +57,6 @@
 		E3AC0D2C28F41378002EB406 /* HotelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsVC.swift; sourceTree = "<group>"; };
 		E3AC0D2E28F4138F002EB406 /* HotelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsCell.swift; sourceTree = "<group>"; };
 		E3AC0D3328F416C1002EB406 /* HotelDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDetailsVC.swift; sourceTree = "<group>"; };
-		E3AC0D3528F416D8002EB406 /* FlightDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsVC.swift; sourceTree = "<group>"; };
 		E3AC0D3B28F49E66002EB406 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = "Bootcamp Bitirme Projesi/data.json"; sourceTree = SOURCE_ROOT; };
 		E3AC0D3D28F6BB7A002EB406 /* flightData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flightData.json; sourceTree = SOURCE_ROOT; };
 		E3AC0D3F28F7FD13002EB406 /* cityData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cityData.json; sourceTree = SOURCE_ROOT; };
@@ -199,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				E3AC0D3328F416C1002EB406 /* HotelDetailsVC.swift */,
-				E3AC0D3528F416D8002EB406 /* FlightDetailsVC.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -338,7 +335,6 @@
 				E399524428E461D700544AB6 /* AppDelegate.swift in Sources */,
 				E3AC0D2828F40B7F002EB406 /* FlightsCell.swift in Sources */,
 				E3826F8728F05F4200AA5E96 /* topPickCell.swift in Sources */,
-				E3AC0D3628F416D8002EB406 /* FlightDetailsVC.swift in Sources */,
 				E3AC0D2F28F4138F002EB406 /* HotelsCell.swift in Sources */,
 				E399524628E461D700544AB6 /* SceneDelegate.swift in Sources */,
 			);

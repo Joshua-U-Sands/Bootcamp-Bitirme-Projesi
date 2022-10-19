@@ -468,114 +468,6 @@
             </objects>
             <point key="canvasLocation" x="1125.7009345794393" y="-6.4794816414686833"/>
         </scene>
-        <!--flightDetail-->
-        <scene sceneID="bqc-dY-Aj2">
-            <objects>
-                <viewController storyboardIdentifier="flightDetailsVC" title="flightDetail" id="Sxe-7i-Xcm" customClass="FlightDetailsVC" customModule="Bootcamp_Bitirme_Projesi" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="L4J-CE-Ne9">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="OBJ-Gp-KGP">
-                                <rect key="frame" x="0.0" y="-17" width="428" height="909"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Qn-yU-b7j">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="465"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image_2" translatesAutoresizingMaskIntoConstraints="NO" id="p4n-Zs-vOD">
-                                                <rect key="frame" x="-44" y="11" width="516" height="454"/>
-                                            </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjt-Kg-sik">
-                                                <rect key="frame" x="21" y="103" width="45" height="45"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bc4-Ly-RKw">
-                                                        <rect key="frame" x="6" y="6" width="32" height="32"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="carbon_arrow-left"/>
-                                                        <connections>
-                                                            <action selector="backButtonPressed:" destination="Sxe-7i-Xcm" eventType="touchUpInside" id="IjM-oC-w7D"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="bc4-Ly-RKw" firstAttribute="centerX" secondItem="xjt-Kg-sik" secondAttribute="centerX" id="37g-yA-gDE"/>
-                                                    <constraint firstItem="bc4-Ly-RKw" firstAttribute="centerY" secondItem="xjt-Kg-sik" secondAttribute="centerY" id="4Jx-GK-BcG"/>
-                                                    <constraint firstItem="bc4-Ly-RKw" firstAttribute="top" secondItem="xjt-Kg-sik" secondAttribute="top" constant="6" id="e4C-hp-Eav"/>
-                                                    <constraint firstItem="bc4-Ly-RKw" firstAttribute="leading" secondItem="xjt-Kg-sik" secondAttribute="leading" constant="6" id="tfk-rC-mYt"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="p4n-Zs-vOD" firstAttribute="centerX" secondItem="0Qn-yU-b7j" secondAttribute="centerX" id="BiQ-xa-cb3"/>
-                                            <constraint firstItem="p4n-Zs-vOD" firstAttribute="top" secondItem="0Qn-yU-b7j" secondAttribute="top" constant="11" id="Fg3-DV-qCS"/>
-                                            <constraint firstAttribute="bottom" secondItem="xjt-Kg-sik" secondAttribute="bottom" constant="317" id="FxH-lJ-wlq"/>
-                                            <constraint firstItem="xjt-Kg-sik" firstAttribute="leading" secondItem="0Qn-yU-b7j" secondAttribute="leading" constant="21" id="Uf4-TI-Ywu"/>
-                                            <constraint firstAttribute="bottom" secondItem="p4n-Zs-vOD" secondAttribute="bottom" id="UnL-v9-fk9"/>
-                                            <constraint firstAttribute="trailing" secondItem="xjt-Kg-sik" secondAttribute="trailing" constant="362" id="jdE-5J-zgw"/>
-                                            <constraint firstItem="xjt-Kg-sik" firstAttribute="top" secondItem="0Qn-yU-b7j" secondAttribute="top" constant="103" id="obg-dj-oNJ"/>
-                                            <constraint firstItem="p4n-Zs-vOD" firstAttribute="leading" secondItem="0Qn-yU-b7j" secondAttribute="leading" constant="-44" id="zhG-z1-hlM"/>
-                                        </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWu-K5-w9a">
-                                        <rect key="frame" x="0.0" y="488" width="52" height="38"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="38" id="GYi-eO-5Tf"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSZ-rS-Xg9">
-                                        <rect key="frame" x="0.0" y="549" width="428" height="360"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osU-ea-ziH">
-                                                <rect key="frame" x="8" y="8" width="412" height="164"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="412" id="Zkw-Ne-lgd"/>
-                                                    <constraint firstAttribute="height" constant="164" id="xGo-0E-ES6"/>
-                                                </constraints>
-                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum non id venenatis, elementum. Enim augue velit tristique eu viverra. Massa.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum non id venenatis, elementum. Enim augue velit tristique eu viverra. Massa.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="osU-ea-ziH" firstAttribute="top" secondItem="CSZ-rS-Xg9" secondAttribute="top" constant="8" id="JPS-cA-AC6"/>
-                                            <constraint firstItem="osU-ea-ziH" firstAttribute="leading" secondItem="CSZ-rS-Xg9" secondAttribute="leading" constant="8" id="Mxp-JX-aLl"/>
-                                            <constraint firstAttribute="trailing" secondItem="osU-ea-ziH" secondAttribute="trailing" constant="8" id="drt-qM-nM9"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="CSZ-rS-Xg9" firstAttribute="top" secondItem="OBJ-Gp-KGP" secondAttribute="top" constant="549" id="Rs5-pr-oNr"/>
-                                    <constraint firstItem="0Qn-yU-b7j" firstAttribute="trailing" secondItem="CSZ-rS-Xg9" secondAttribute="trailing" id="V9s-QF-Y3T"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="OXW-AT-RXA"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="OBJ-Gp-KGP" firstAttribute="top" secondItem="L4J-CE-Ne9" secondAttribute="topMargin" constant="-64" id="ocR-VF-kEb"/>
-                            <constraint firstItem="OBJ-Gp-KGP" firstAttribute="leading" secondItem="L4J-CE-Ne9" secondAttribute="leading" id="qen-hz-2Zt"/>
-                            <constraint firstItem="OBJ-Gp-KGP" firstAttribute="bottom" secondItem="OXW-AT-RXA" secondAttribute="bottom" id="yhS-9y-mRE"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="backButtonView" destination="xjt-Kg-sik" id="NGQ-4b-eAL"/>
-                        <outlet property="descriptionLabel" destination="osU-ea-ziH" id="h62-eb-inG"/>
-                        <outlet property="detailsImage" destination="p4n-Zs-vOD" id="tai-oV-vb3"/>
-                        <outlet property="titleLabel" destination="zWu-K5-w9a" id="H8X-93-0ag"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sce-PT-Xdl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2985.9813084112147" y="258.53131749460044"/>
-        </scene>
         <!--Hotel DetailsVC-->
         <scene sceneID="e5L-Re-Bp2">
             <objects>
@@ -605,7 +497,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum 
                                                         <buttonConfiguration key="configuration" style="plain" image="carbon_arrow-left"/>
                                                         <connections>
                                                             <action selector="backButtonPressed:" destination="z40-x4-Rzg" eventType="touchUpInside" id="1Ni-w0-v4x"/>
-                                                            <action selector="backButtonPressed:" destination="Sxe-7i-Xcm" eventType="touchUpInside" id="58R-0Q-6na"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -653,12 +544,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum 
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUe-hX-un7">
+                                                <rect key="frame" x="60" y="264" width="309" height="54"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Add Bookmark"/>
+                                                <connections>
+                                                    <action selector="bookmarkPressed:" destination="z40-x4-Rzg" eventType="touchUpInside" id="gIf-nt-yE1"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="PUe-hX-un7" firstAttribute="centerX" secondItem="NL2-qN-8ev" secondAttribute="centerX" id="62T-Pe-cdS"/>
+                                            <constraint firstItem="PUe-hX-un7" firstAttribute="top" secondItem="NL2-qN-8ev" secondAttribute="bottom" constant="92" id="CaO-hL-h7y"/>
+                                            <constraint firstAttribute="bottom" secondItem="PUe-hX-un7" secondAttribute="bottom" constant="42" id="J9z-qQ-DeU"/>
                                             <constraint firstAttribute="trailing" secondItem="NL2-qN-8ev" secondAttribute="trailing" constant="8" id="V0I-1V-uF2"/>
                                             <constraint firstItem="NL2-qN-8ev" firstAttribute="top" secondItem="PYR-et-iQv" secondAttribute="top" constant="8" id="awT-Js-dEn"/>
                                             <constraint firstItem="NL2-qN-8ev" firstAttribute="leading" secondItem="PYR-et-iQv" secondAttribute="leading" constant="8" id="c43-CB-2iY"/>
+                                            <constraint firstItem="PUe-hX-un7" firstAttribute="leading" secondItem="PYR-et-iQv" secondAttribute="leading" constant="60" id="pSj-mN-AWQ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -678,6 +581,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum 
                     </view>
                     <connections>
                         <outlet property="backButtonView" destination="d4R-Rk-xU5" id="0Ov-st-9ak"/>
+                        <outlet property="bookmarkButton" destination="PUe-hX-un7" id="fjv-al-Vj9"/>
                         <outlet property="descriptionLabel" destination="NL2-qN-8ev" id="i8E-bK-uDI"/>
                         <outlet property="detailsImage" destination="5s9-Df-z3q" id="czC-u5-hML"/>
                         <outlet property="titleLabel" destination="hXG-6N-GYw" id="9gx-O0-rFz"/>
@@ -1295,7 +1199,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum 
         <image name="FlightsCellImage" width="388" height="185"/>
         <image name="FlightsUnselected" width="109" height="25"/>
         <image name="HotelsSelected" width="105" height="40"/>
-        <image name="Image_2" width="915" height="485"/>
         <image name="Image_9" width="1680" height="1050"/>
         <image name="background" width="390" height="455"/>
         <image name="bookmarkimagePH" width="390" height="178"/>

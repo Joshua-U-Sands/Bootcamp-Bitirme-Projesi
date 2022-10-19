@@ -9,7 +9,10 @@ import UIKit
 
 class HotelDetailsVC: UIViewController {
 
+    var isSaved = false
     var x = 0
+    
+    @IBOutlet weak var bookmarkButton: UIButton!
     
     @IBOutlet weak var backButtonView: UIView!
     @IBOutlet weak var detailsImage: UIImageView!
@@ -25,6 +28,13 @@ class HotelDetailsVC: UIViewController {
         detailsImage.layer.cornerRadius = 8.0
         detailsImage.clipsToBounds = true
         detailsImage.contentMode = .scaleToFill
+        
+        bookmarkButton.layer.backgroundColor = UIColor(red: 1, green: 0.28, blue: 0.375, alpha: 1).cgColor
+        
+        bookmarkButton.layer.cornerRadius = 8
+        
+        bookmarkButton.titleLabel?.textColor = UIColor.white
+        bookmarkButton.titleLabel?.font = UIFont(name: "Montserrat", size: 16.0)
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
@@ -39,6 +49,11 @@ class HotelDetailsVC: UIViewController {
             let vc = storyboard?.instantiateViewController(withIdentifier: "flightsVC") as! FlightsVC
             vc.modalPresentationStyle = .fullScreen
             present(vc,animated: true)
+            
+        }
+    }
+    @IBAction func bookmarkPressed(_ sender: UIButton) {
+        if isSaved == false {
             
         }
     }
